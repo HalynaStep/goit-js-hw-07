@@ -1,12 +1,10 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-console.log(galleryItems);
+// console.log(galleryItems);
 
 const gallery = document.querySelector(".gallery");
-const imageCard = createImagesCard(galleryItems);
 
-gallery.insertAdjacentHTML('beforeend', imageCard);
 
 function createImagesCard(galleryItems) {
     return galleryItems.map(({ preview, original, description }) => 
@@ -24,6 +22,6 @@ gallery.innerHTML = createImagesCard(galleryItems);
 
 const lightbox = new SimpleLightbox('.gallery a', {
     captionsData: "alt",
-    captionDelay: "250"
+    captionDelay: "250",
 });
-console.log(lightbox);
+
