@@ -20,8 +20,10 @@ function createImagesCard(galleryItems) {
 
 gallery.innerHTML = createImagesCard(galleryItems);
 
-const lightbox = new SimpleLightbox('.gallery a', {
+var lightbox = new SimpleLightbox('.gallery a', {
     captionsData: "alt",
-    captionDelay: "250",
+    captionDelay: 250
 });
+
+console.log(lightbox);
 
